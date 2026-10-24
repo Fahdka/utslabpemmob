@@ -1,10 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Alert, StyleSheet, View } from 'react-native';
+import InfoCard, { InfoStatus } from './src/components/InfoCard';
 
 export default function App() {
+  const showDetail = (title: string, status: InfoStatus) => {
+    Alert.alert(title, `Status: ${status}`);
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <InfoCard
+        title="Mengerjakan Jobsheet 04"
+        status="proses"
+        onPress={() => showDetail('Mengerjakan Jobsheet 04', 'proses')}
+      />
+      <InfoCard
+        title="Instalasi Expo dan VS Code"
+        status="selesai"
+        onPress={() => showDetail('Instalasi Expo dan VS Code', 'selesai')}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +27,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+    backgroundColor: '#F5F5F5',
     justifyContent: 'center',
+    padding: 16,
   },
 });

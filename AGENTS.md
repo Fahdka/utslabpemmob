@@ -39,3 +39,13 @@ Docs: https://docs.expo.dev/eas/index.md
 - If `ios/` and `android/` directories do not exist, they are generated (Continuous Native Generation). Never create or edit them by hand — configure native behavior in `app.json` and config plugins.
 - Expo Go only includes its bundled native modules. After adding a library with native code, the app needs a development build: `npx expo run:ios|android` locally, or `eas build --profile development`.
 - Prefer recommended Expo modules over third-party libraries, and check your available skills before adding dependencies. Docs: https://docs.expo.dev/versions/latest/index.md
+
+
+## Aturan Proyek UTS (wajib)
+- Stack: Expo + React Native + TypeScript. Tanpa library tambahan (jangan npm install apa pun).
+- Semua kode ada di src/ (components/, screens/). Entry point: App.tsx di root.
+- Hanya komponen inti react-native: View, Text, TextInput, FlatList, TouchableOpacity, StyleSheet, Alert.
+- Dilarang: ScrollView membungkus FlatList, navigasi, state manager, emoji di kode, komentar bertele-tele, file di luar rencana, `any`.
+- Sebelum menulis kode, baca hanya file yang disebut di prompt. Jangan menjelajah seluruh repo dan jangan membaca PDF soal.
+- Jangan ubah package.json, app.json, tsconfig.json.
+- Setelah selesai, balas ringkas: daftar file yang berubah + cara menjalankan. Tanpa penjelasan panjang.
