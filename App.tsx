@@ -11,14 +11,14 @@ export default function App() {
   return (
     <View style={styles.container}>
       <InfoCard
-        title="Mengerjakan Jobsheet 04"
+        title="Menyimpan Data Mahasiswa"
         status="proses"
-        onPress={() => showDetail('Mengerjakan Jobsheet 04', 'proses')}
+        onPress={() => showDetail('Menyimpan Data Mahasiswa', 'proses')}
       />
       <InfoCard
-        title="Instalasi Expo dan VS Code"
+        title="Input Mahasiswa Peserta Projek UTS Lab"
         status="selesai"
-        onPress={() => showDetail('Instalasi Expo dan VS Code', 'selesai')}
+        onPress={() => showDetail('Input Mahasiswa Peserta Projek UTS Lab', 'selesai')}
       />
       <DirektoriMahasiswaScreen />
       <StatusBar style="auto" />
