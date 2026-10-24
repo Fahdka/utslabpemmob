@@ -13,6 +13,7 @@ const DAFTAR_MAHASISWA: Mahasiswa[] = [
   { id: '3', nama: 'Citra Dewi', prodi: 'Sistem Informasi' },
   { id: '4', nama: 'Dimas Anggara', prodi: 'Teknik Informatika' },
   { id: '5', nama: 'Eka Nur Safitri', prodi: 'Sistem Informasi' },
+  { id: '6', nama: 'Fahd Khalaf Raissa', prodi: 'Teknologi Informasi' },
 ];
 
 export default function DirektoriMahasiswaScreen() {
