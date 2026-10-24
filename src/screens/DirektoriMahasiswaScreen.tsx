@@ -8,11 +8,11 @@ interface Mahasiswa {
 }
 
 const DAFTAR_MAHASISWA: Mahasiswa[] = [
-  { id: '1', nama: 'Alifia Putri', prodi: 'Sistem Informasi' },
-  { id: '2', nama: 'Budi Santoso', prodi: 'Teknologi Informasi' },
-  { id: '3', nama: 'Citra Dewi', prodi: 'Sistem Informasi' },
-  { id: '4', nama: 'Dimas Anggara', prodi: 'Teknik Informatika' },
-  { id: '5', nama: 'Eka Nur Safitri', prodi: 'Sistem Informasi' },
+  { id: '1', nama: 'Rendra Pratama', prodi: 'Sistem Informasi' },
+  { id: '2', nama: 'Salsabila Rahma', prodi: 'Teknologi Informasi' },
+  { id: '3', nama: 'Tegar Mahendra', prodi: 'Teknik Informatika' },
+  { id: '4', nama: 'Nadia Kusuma', prodi: 'Sistem Informasi' },
+  { id: '5', nama: 'Yoga Firmansyah', prodi: 'Teknologi Informasi' },
   { id: '6', nama: 'Fahd Khalaf Raissa', prodi: 'Teknologi Informasi' },
 ];
 
