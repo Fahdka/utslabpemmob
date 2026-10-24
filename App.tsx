@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Alert, StyleSheet, View } from 'react-native';
 import InfoCard, { InfoStatus } from './src/components/InfoCard';
+import DirektoriMahasiswaScreen from './src/screens/DirektoriMahasiswaScreen';
 
 export default function App() {
   const showDetail = (title: string, status: InfoStatus) => {
@@ -19,6 +20,7 @@ export default function App() {
         status="selesai"
         onPress={() => showDetail('Instalasi Expo dan VS Code', 'selesai')}
       />
+      <DirektoriMahasiswaScreen />
       <StatusBar style="auto" />
     </View>
   );
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F5F5F5',
-    justifyContent: 'center',
-    padding: 16,
+    paddingTop: 48,
+    paddingHorizontal: 16,
   },
 });
